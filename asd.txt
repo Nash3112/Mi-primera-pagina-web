@@ -1,0 +1,59 @@
+
+header{
+    height: 80.95px;
+    width: 100%;
+    background-color: rgb(255, 246, 240);
+    position: relative;
+}
+
+.logo {
+    width: 210px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 8px;
+}
+
+header nav, header nav ul, header nav ul li {
+    display: inline;
+}
+
+#index{
+    position: absolute;
+    left:30%;
+    top: 35px;
+}
+
+header nav ul{
+    align-items: center;
+    justify-content: space-between;
+    word-spacing: 45px;
+}
+
+li a{
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 600;
+    font-size:0.48cm;
+    text-decoration: none;
+    color:rgb(41,41, 41);
+
+}
+li a:hover{
+
+    
+}
+
+.contacto{
+    padding: 5px 10px;
+    margin: 10px 4px ;
+    background-color:rgb(150,179,72);
+    border-radius: 7px;
+    color: white;
+    position: relative;
+    left: 10%;
+    top: -7px;
+    }
+.contacto:hover{
+    background-color:rgb(62, 141, 92) ;
+}
+
+

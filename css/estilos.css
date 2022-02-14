@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+    
+}
+/*Header*/
+header{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+header img{
+    margin-left: 8%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header nav, header nav ul, header nav ul li {
+    display: inline;
+}
+header nav ul{
+    align-items: center;
+    justify-content: space-between;
+    word-spacing: 30px;
+}
+
+#index{
+    position: absolute;
+    left:30%;
+    top: 30px;
+}
+
+li a{
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 600;
+    font-size:0.48cm;
+    text-decoration: none;
+    color:rgb(41,41, 41);
+
+}
+
+.contacto{
+    padding: 5px 10px;
+    margin-left: 30%;
+    background-color:rgb(150,179,72);
+    border-radius: 7px;
+    color: white;
+    position: absolute;
+    top: -10px;
+    }
+
+.contacto:hover{
+    background-color:rgb(62, 141, 92) ;
+    color: rgb(255, 255, 255);
+}
+
+li a:hover{
+    color:rgb(62, 141, 92);
+}
+
+/*Terapias*/
+
+.especialidades {
+    width: 100%;
+    text-align: center;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.subtitulo{
+    max-width: 100%;
+    color: #545454;
+    font-weight: 400;
+    font-size: larger;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0;
+
+
+}
+.titulo{
+    font-family:'Arima Madurai', cursive;
+    font-weight:800;
+    color: rgb(64, 134, 43);
+    font-size:xx-large;
+
+}
+
+.nosotros{
+    background-color: rgb(255,246,240);
+    text-align: center;
+    margin-top: 10px;
+    display:block;
+}
+
+.texto1{
+    color: #545454; font-weight: 400; font-size:xx-large;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
