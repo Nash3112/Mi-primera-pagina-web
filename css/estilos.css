@@ -13,6 +13,7 @@
 header{
     position: relative;
     background-color: rgb(255, 255, 255);
+        
 }
 
 header img{
@@ -104,8 +105,18 @@ li a:hover{
 }
 
 .texto1{
-    color: #545454; font-weight: 400; font-size:xx-large;
-    padding-top: 25px;
+    color: #545454; font-weight: 400; font-size:x-large;
+    padding-top: 80px;
     padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
+.btn-outline-success{
+    margin-bottom: 50px;
+}
+
+.clearfix{
+    padding-left: 50px;
+    padding-right: 50px;
+}
