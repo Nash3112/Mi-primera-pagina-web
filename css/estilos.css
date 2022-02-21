@@ -2,26 +2,188 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
-*{
+*, html{
+    font-family: "Arima Madurai", cursive;
     padding: 0;
     margin: 0;
     top: 0;
     box-sizing: border-box;
-    
+    scroll-behavior: smooth;
 }
+
+*,*::before ,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* ************* Header *********** */
+
+.header{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 8vh;
+    top: 0;
+    box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 10%);
+    z-index: 15;
+}
+
+.enlaces-menu{
+    display: flex;
+    padding: 0;
+}
+.enlaces-menu li{
+    padding: 0 40px;
+    padding-top: 12px;
+    list-style-type: none;
+    transition: 0.5s;
+}
+
+.enlaces-menu li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: black;
+    font-weight:500;
+
+}
+
+button span{
+    display: none;
+}
+
+/*********** boton 3 barras **********/
+
+.ham{
+    display:none;
+    background-color:transparent;
+    cursor: pointer;
+    border:none;
+    margin:0;
+    padding:0;
+    }
+    
+    .ham span{
+        background-color: #f3f3f3;
+        display:block;
+        height:3px;
+        width: 28px;
+        margin:10px auto;
+        border-radius:2px;    
+    }   
+
+.enlaces-menu li a:hover{
+    color:  rgb(64, 134, 43);
+    border-bottom: solid rgb(64, 134, 43) 2px;
+}
+
+/* DISPOSITIVOS MOVILES */
+
+@media (max-width:768px) {
+    body{
+      overflow:hidden;
+    }
+      .ham{
+          display:block;
+          cursor:pointer;
+          position: absolute; 
+          top:15px;
+          right:25px;
+          transition: 0.2s  0.1s; 
+  
+      }
+   
+      
+      nav{
+          flex-direction:column;
+          align-items: flex-start;
+          padding-top: 25px;
+          padding-bottom: 25px;
+      }
+
+      .logo{
+        padding-left:25px;
+        
+      }
+
+      .enlaces-menu{
+        
+          flex-direction:column;
+          justify-content: space-around;
+          align-items:center;
+          height: 92vh;         
+          margin:0;
+          padding:0; 
+          display:none;
+          opacity:0;
+          transition: opacity 5s ease-out;
+          width:100%;
+      
+         
+      }
+      .enlaces-menu li{
+        text-align:center;
+        width:100%;
+        padding:20px;    
+    }
+  
+}
+
+/* Animaciones */
+  
+@keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .enlaces-menu.activado{
+      display:flex; 
+      animation: muestraMenu 350ms ease-in-out both;
+  }
+
+  .br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+  }
+  
+  .br-2.animado{
+    opacity: 0;
+  }
+  .br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+  }
+
+ .ham.girar:hover{
+     transform:rotate(360deg);
+ }
 /*Header*/
-header{
+/*header{
     position: relative;
     background-color: rgb(255, 255, 255);
         
-}
-
+}*/
+/*
 header img{
     margin-left: 8%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
+.navbar-nav, .nav-link{
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 600;
+    font-size:0.52cm;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}*/
+
+
+
+
+
+/*
 header nav, header nav ul, header nav ul li {
     display: inline;
 }
@@ -63,9 +225,9 @@ li a{
 
 li a:hover{
     color:rgb(62, 141, 92);
-}
+} */
 
-/*Terapias*/
+/************ Terapias **********/
 
 .especialidades {
     width: 100%;
@@ -120,3 +282,16 @@ li a:hover{
     padding-left: 50px;
     padding-right: 50px;
 }
+
+
+/* *******  menu hamburguesa ****** */
+
+/*.menu_hamburguer{
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background-color: green;
+    color: aliceblue;
+    z-index: 15;
+
+}*/
